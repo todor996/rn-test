@@ -3,7 +3,9 @@ import {
     StyleSheet,
     Platform,
     Animated,
-    Easing
+    Easing,
+    View,
+    Text
 } from 'react-native';
 import {Provider} from 'react-redux';
 // import configureStore from './src/store/configureStore';
@@ -75,14 +77,13 @@ import Login from './src/components/User/Login';
 import Register from './src/components/User/Register';
 import PostPage from './src/components/Post/PostPage';
 // const store = configureStore();
+console.log('here');
 export default class MyApp extends Component {
     render() {
         return (
-            <Provider store={store}  >
-            <PersistGate loading={null} persistor={persistor}>
-            <AppStackNavigator ref={navigatorRef => { NavigationService.setTopLevelNavigator(navigatorRef)}} style={styles.container} />
-        </PersistGate>
-        </Provider>
+            <View>
+                <Text>Hello app</Text>
+            </View>
     );
     }
 }

@@ -57,6 +57,8 @@ target 'Citybook' do
     pod 'Firebase/Messaging'
     pod 'Firebase/Performance'
     pod 'Firebase/Storage'
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
 end
 
 post_install do |installer|
